@@ -84,16 +84,16 @@
   width: 50%;
   height: 100%;
 }
-.건배경,
-.리배경 {
+.건괘,
+.리괘 {
   width: 25%;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.곤배경,
-.감배경 {
+.곤괘,
+.감괘 {
   width: 25%;
   height: 100%;
   display: flex;
