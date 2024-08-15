@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link />
+    <link rel="stylesheet" href="형태.css" />
+    <title>태극기</title>
+  </head>
+  <body>
+    <div class="배경">
+      <div class="태극기">
+        <div class="태극">
+          <div class="양채우기"></div>
+          <div class="음채우기"></div>
+          <div class="양"></div>
+          <div class="음"></div>
+        </div>
+        <div class="건곤">
+          <div class="건배경">
+            <div class="건">
+              <div class="선 검정"></div>
+              <div class="선 검정"></div>
+              <div class="선 검정"></div>
+            </div>
+          </div>
+          <div class="거리"></div>
+          <div class="곤배경">
+            <div class="감">
+              <div class="선">
+                <div class="작은선 검정"></div>
+                <div class="작은선 검정"></div>
+              </div>
+              <div class="선">
+                <div class="작은선 검정"></div>
+                <div class="작은선 검정"></div>
+              </div>
+              <div class="선">
+                <div class="작은선 검정"></div>
+                <div class="작은선 검정"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="감리">
+          <div class="리배경">
+            <div class="리">
+              <div class="선 검정"></div>
+              <div class="선">
+                <div class="작은선 검정"></div>
+                <div class="작은선 검정"></div>
+              </div>
+              <div class="선 검정"></div>
+            </div>
+          </div>
+          <div class="거리"></div>
+          <div class="감배경">
+            <div class="감">
+              <div class="선">
+                <div class="작은선 검정"></div>
+                <div class="작은선 검정"></div>
+              </div>
+              <div class="선 검정"></div>
+              <div class="선">
+                <div class="작은선 검정"></div>
+                <div class="작은선 검정"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function resizeContainer() {
+        const container = document.querySelector(".태극기");
+        const bgWidth = window.innerWidth;
+        const bgHeight = window.innerHeight;
+
+        const aspectRatio = 540 / 360; // 3:2 비율
+
+        let containerWidth = bgWidth;
+        let containerHeight = containerWidth / aspectRatio;
+
+        if (containerHeight > bgHeight) {
+          containerHeight = bgHeight;
+          containerWidth = containerHeight * aspectRatio;
+        }
+
+        // 최대 크기를 540x360으로 제한
+        if (containerWidth > 540) {
+          containerWidth = 540;
+          containerHeight = 360;
+        }
+
+        container.style.width = `${containerWidth}px`;
+        container.style.height = `${containerHeight}px`;
+      }
+
+      window.addEventListener("resize", resizeContainer);
+      resizeContainer(); // 초기 로드 시 실행
+    </script>
+  </body>
+</html>

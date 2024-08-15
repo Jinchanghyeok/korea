@@ -1,0 +1,141 @@
+.배경 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.태극기 {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.태극 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(33.33deg);
+  width: 33.33%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.음 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-color: #134a9d;
+  border-radius: 100%;
+}
+.음채우기 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #134a9d;
+}
+
+.양 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-color: #d0303c;
+  border-radius: 100%;
+}
+.양채우기 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #d0303c;
+}
+
+.건곤 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  transform: rotate(33.33deg);
+}
+
+.감리 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: rotate(-33.33deg);
+}
+.거리 {
+  width: 50%;
+  height: 100%;
+}
+.건배경,
+.리배경 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.곤배경,
+.감배경 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.건,
+.곤,
+.감,
+.리 {
+  width: 50%;
+  aspect-ratio: 2/3;
+  display: flex;
+  justify-content: space-between;
+}
+.선 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.작은선 {
+  width: 100%;
+  height: 45%;
+}
+.검정 {
+  background-color: black;
+}
+.곤배경 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
